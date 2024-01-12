@@ -8,6 +8,8 @@
 					class="sapUiSmallMarginEnd"></Button>
                     <Button xmlns="sap.m" id="3" text="Third Button" press="clickbutton3"
 					class="sapUiSmallMarginEnd"></Button>
+                    <Button xmlns="sap.m" id="4" text="Fourth Button" press="clickbutton4"
+					class="sapUiSmallMarginEnd"></Button>
         <content />
     </Page>
 </mvc:View>
