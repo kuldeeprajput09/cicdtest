@@ -1,10 +1,19 @@
 {
     "xsappname": "cicdtest",
     "tenant-mode": "dedicated",
-    "description": "Security profile of cicdtest application",
+    "description": "Security profile of cicdtest applications",
     "scopes": [{
       "name":"$XSAPPNAME.Display",
       "description":"UAA Display"
-      }]
+      }],
+    "role-templates": [
+        {
+            "name":"TEST_CICD_RT",
+            "description":"Role Template for cicdtest Applications",
+            "scope-references":[
+                "$XSAPPNAME.Display"
+            ]
+        }
+    ]
     }
   
