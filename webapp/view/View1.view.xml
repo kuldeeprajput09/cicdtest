@@ -1,17 +1,82 @@
 <mvc:View controllerName="cicdtest.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
+    xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout">
     <Page id="page" title="{i18n>title}">
-    <Button xmlns="sap.m" id="1" text="First Button" press="clickbutton1"
+    <Button xmlns="sap.m" id="FirstButton" text="First Button" press="clickbutton"
 					class="sapUiSmallMarginEnd"></Button>
-                    <Button xmlns="sap.m" id="2" text="Second Button" press="clickbutton2"
+                    <Button xmlns="sap.m" id="SecondButton" text="Second Button" press="clickbutton"
 					class="sapUiSmallMarginEnd"></Button>
-                    <Button xmlns="sap.m" id="3" text="Third Button" press="clickbutton3"
+                    <Button xmlns="sap.m" id="ThirdButton" text="Third Button" press="clickbutton"
 					class="sapUiSmallMarginEnd"></Button>
-                    <Button xmlns="sap.m" id="4" text="Fourth Button" press="clickbutton4"
+                    <Button xmlns="sap.m" id="FourthButton" text="Fourth Button" press="clickbutton"
 					class="sapUiSmallMarginEnd"></Button>
-                    <Button xmlns="sap.m" id="5" text="Fifth Button" press="clickbutton5"
+                    <Button xmlns="sap.m" id="FifthButton" text="Fifth Button" press="clickbutton"
 					class="sapUiSmallMarginEnd"></Button>
+                    	<Toolbar id="_IDGenToolbar1" class="sapUiSmallMarginTop">
+					<content>
+						<Title id="_IDGenTitle1" text="Button properties"/>
+					</content>
+				</Toolbar>
+				<FlexBox id="_IDGenFlexBox1"
+					class="sapUiTinyMarginBeginEnd"
+					alignItems="Center"
+					justifyContent="Start">
+					<Text id="_IDGenText1"
+						renderWhitespace="true"
+						width="39px"
+						text="Type  "/>
+					<Select
+						id="ButtonType"
+						selectedKey="{/buttonType}">
+						<core:Item id="_IDGenItem1"
+								key="Default"
+								text="Default"/>
+						<core:Item id="_IDGenItem2"
+								key="Ghost"
+								text="Ghost"/>
+						<core:Item id="_IDGenItem3"
+								key="Transparent"
+								text="Transparent"/>
+						<core:Item id="_IDGenItem4"
+								key="Emphasized"
+								text="Emphasized"/>
+					</Select>
+				</FlexBox>
+				<FlexBox id="_IDGenFlexBox2"
+					class="sapUiTinyMarginBeginEnd"
+					alignItems="Center"
+					justifyContent="Start">
+					<Text id="_IDGenText2"
+						renderWhitespace="true"
+						text="With "/>
+					<CheckBox
+						id="IconCheckBox"
+						text="Icon"
+						selected="{/buttonWithIcon}"/>
+					<CheckBox
+						id="TextCheckBox"
+						text="Text"
+						selected="{/buttonWithText}"/>
+				</FlexBox>
+                <Toolbar id="_IDGenToolbar2" class="sapUiSmallMarginTop">
+					<content>
+						<Title id="_IDGenTitle2" text="Notes"/>
+					</content>
+				</Toolbar>
+				<Text id="_IDGenText3"
+					class="sapUiTinyMargin"
+					wrapping="true"
+					text="1. The value displayed in the Badge is controlled by the Button - if the value is below 1, the badge is hidden; if value is above the 9999, it is displayed as 999+"/>
+				<Text id="_IDGenText4"
+					class="sapUiTinyMargin"
+					wrapping="true"
+					text="2. If an application developer wants to control more precisely the value and appearance of the Badge, that can be done as it is presented in this sample, but the constraints mentioned in (1) cannot be exceeded!"/>
+				<Text id="_IDGenText5"
+					class="sapUiTinyMargin"
+					wrapping="true"
+					text="3. Badge can be used with all Button types, but it is recommended to use it only with the following Button types: Default, Ghost, Transparent and Emphasized."/>
         <content />
     </Page>
 </mvc:View>
