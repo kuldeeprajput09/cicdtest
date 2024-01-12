@@ -1,0 +1,10 @@
+{
+    "xsappname": "cicdtest",
+    "tenant-mode": "dedicated",
+    "description": "Security profile of cicdtest application",
+    "scopes": [{
+      "name":"$XSAPPNAME.Display",
+      "description":"UAA Display"
+      }]
+    }
+  
