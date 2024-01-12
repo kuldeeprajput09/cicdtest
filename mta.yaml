@@ -43,10 +43,10 @@ modules:
     build-result: resources
     requires:
     - artifacts:
-      - ZSIEDSPMWORKORDERNEWTR.zip
-      name: ZSIEDSPMWORKORDERNEWTR
+      - cicdtest.zip
+      name: cicdtest
       target-path: resources/
-- name: ZSIEDSPMWORKORDERNEWTR
+- name: cicdtest
   type: html5
   path: .
   build-parameters:
