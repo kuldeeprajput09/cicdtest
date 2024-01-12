@@ -1,0 +1,11 @@
+<mvc:View controllerName="cicdtest.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <Button xmlns="sap.m" id="1" text="First Button" press="clickbutton1"
+					class="sapUiSmallMarginEnd"></Button>
+                    <Button xmlns="sap.m" id="2" text="Second Button" press="clickbutton2"
+					class="sapUiSmallMarginEnd"></Button>
+        <content />
+    </Page>
+</mvc:View>
