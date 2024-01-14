@@ -16,5 +16,4 @@ sap.ui.define([
                 MessageToast.show(evt.getSource().getId() + " Pressed");
             }
         });
-        ;
     });
