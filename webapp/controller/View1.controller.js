@@ -14,6 +14,8 @@ sap.ui.define([
             },
             clickbutton: function (evt) {
                 MessageToast.show(evt.getSource().getId() + " Pressed");
+            },clickbutton: function (evt) {
+                MessageToast.show(evt.getSource().getId() + " Pressed");
             }
         });
     });
